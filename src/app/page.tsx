@@ -4,6 +4,7 @@ import { CodePreviewSection } from '@/components/home/code-preview-section';
 
 // Lazy load below-the-fold components to improve initial load performance
 const FeaturesSection = dynamic(() => import('@/components/home/features-section').then(mod => mod.FeaturesSection));
+const InstallationSection = dynamic(() => import('@/components/home/installation-section').then(mod => mod.InstallationSection));
 const CTASection = dynamic(() => import('@/components/home/cta-section').then(mod => mod.CTASection));
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
       <CodePreviewSection />
       <FeaturesSection />
+      <InstallationSection />
       <CTASection />
     </div>
   );

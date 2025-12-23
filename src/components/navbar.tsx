@@ -15,6 +15,9 @@ export function Navbar() {
             <Link href="/docs/LANGUAGE" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
               Docs
             </Link>
+            <Link href="/download" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+              Download
+            </Link>
             <Link href="/docs/PHILOSOPHY" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
               Philosophy
             </Link>
@@ -55,6 +58,11 @@ export function Navbar() {
                     <SheetClose asChild>
                       <Link href="/docs/LANGUAGE" className="rounded-xl px-4 py-3 text-base font-medium hover:bg-primary/10">
                         Documentation
+                      </Link>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <Link href="/download" className="rounded-xl px-4 py-3 text-base font-medium hover:bg-primary/10">
+                        Download
                       </Link>
                     </SheetClose>
                     <SheetClose asChild>

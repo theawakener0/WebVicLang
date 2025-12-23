@@ -23,8 +23,8 @@ export function HeroSection() {
           <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse" />
           Victoria v0.1.0 is now in preview
         </motion.div>
-        <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/50">
-          Programming <span className="font-serif italic font-light opacity-80">simplified.</span>
+        <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl text-foreground">
+          Programming <span className="font-serif italic font-light text-muted-foreground">simplified.</span>
         </h1>
         <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl font-light leading-relaxed">
           Victoria is a learning-first programming language designed for clarity, joy, and progressive complexity. 

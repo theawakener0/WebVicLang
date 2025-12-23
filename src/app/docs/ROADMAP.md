@@ -74,7 +74,7 @@ Right now, we especially need help with:
 1. **Error message improvements** - Making every error a learning moment
 2. **Documentation** - More examples and tutorials
 3. **Testing** - More test coverage
-4. **VS Code extension** - Syntax highlighting and snippets
+4. **Neovim & VS Code extension** - LSP, Syntax highlighting ,and snippets
 
 ---
 
