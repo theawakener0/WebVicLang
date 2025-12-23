@@ -10,7 +10,7 @@ Most programming languages were designed for experts, then retrofitted for begin
 
 When you make a mistake in Victoria, you don't get a cryptic stack trace. You get a clear explanation of what went wrong, why it happened, and how to fix it.
 
-```
+```victoria
 error[E0001]: type mismatch: cannot assign string to variable of type int
  --> example.vc:2:1
   |
@@ -87,8 +87,7 @@ Victoria comes with built-in modules for common tasks:
 - **math** - Mathematical operations
 - **json** - JSON parsing and serialization
 - **time** - Date and time handling
-- **http** - HTTP client operations
-- **tcp** - Network programming
+- **net** - Network programming & HTTP client operations
 
 You can build useful programs on day one, without installing dependencies.
 

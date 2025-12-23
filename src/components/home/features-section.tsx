@@ -27,7 +27,7 @@ export function FeaturesSection() {
           },
           {
             title: "Batteries Included",
-            description: "Built-in support for JSON, HTTP, Math, and more. Start building real applications immediately.",
+            description: "Built-in support for NET, OS, Math, and more. Start building real applications immediately.",
             icon: ShieldCheck
           }
         ].map((feature, i) => (

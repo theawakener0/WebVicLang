@@ -55,7 +55,7 @@ Victoria comes with a package manager called `vic`.
 
 ### Example Library Structure
 
-```
+```victoria
 your-repo/
   ├── index.vc      (Entry point)
   ├── utils.vc

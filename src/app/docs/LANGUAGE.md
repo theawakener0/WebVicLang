@@ -742,7 +742,7 @@ include ("os", "math", "json", "time", "path")
 ### Available Modules
 
 - `os`: File system operations (`readFile`, `writeFile`, `exists`, `exec`, `platform`, etc.)
-- `net`: Networking (`http.get`, `http.post`, `tcp.connect`, etc.)
+- `net`: Networking (`net.get`, `net.request`, `net.dial`, etc.)
 - `math`: Math functions (`abs`, `sqrt`, `pow`, `sin`, `cos`, `floor`, `ceil`, `round`, `min`, `max`, `random`, etc.)
 - `json`: JSON parsing and serialization (`parse`, `stringify`, `valid`)
 - `time`: Date/time operations (`now`, `format`, `parse`, `date`, `time`, etc.)
@@ -756,7 +756,7 @@ When you include a user-defined module (e.g., `include "mylib"`), Victoria evalu
 Example `mylib.vc`:
 ```victoria
 let version = "1.0.0"
-let add = fn(a, b) { return a + b }
+let add = define(a, b) { return a + b }
 ```
 
 Example usage:
@@ -1055,14 +1055,14 @@ print(net.lookupHost("google.com"))
 print(net.interfaces()[0].mac)
 
 // HTTP Server (Simple)
-net.listen(8080, fn(req) {
+net.listen(8080, define(req) {
     return "Hello from Victoria!"
 })
 
 // HTTP Server (with Routing)
 net.serve(8080, {
-    "/": fn(req) { return "Home" },
-    "/api": fn(req) { 
+    "/": define(req) { return "Home" },
+    "/api": define(req) { 
         return {
             "status": 200,
             "body": `{"status": "ok"}`,
@@ -1259,7 +1259,7 @@ Victoria provides beautiful, developer-friendly error messages **inspired by the
 
 ### Example: Undefined Variable
 
-```
+```victoria
 error[E0002]: identifier not found: myVariable
  --> script.vc:5:12
   |
@@ -1273,7 +1273,7 @@ error[E0002]: identifier not found: myVariable
 
 ### Example: Type Mismatch
 
-```
+```victoria
 error: type mismatch: STRING + INTEGER
  --> script.vc:3:20
   |
@@ -1288,7 +1288,7 @@ error: type mismatch: STRING + INTEGER
 
 ### Example: Syntax Error
 
-```
+```victoria
 error[E0004]: expected '=' but found 'EOF'
  --> script.vc:2:1
   |
@@ -1782,5 +1782,3 @@ return arr[0]
 | Hash check | `if (freq[key] != null)` |
 
 ---
-
-Happy coding! ��� Victoria makes DSA fun and accessible.
