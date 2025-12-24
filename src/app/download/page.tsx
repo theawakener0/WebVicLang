@@ -60,7 +60,7 @@ export default function DownloadPage() {
             </Button>
           </div>
           <p className="text-xs text-muted-foreground pt-4">
-            Place these files in a folder included in your system's PATH.
+            Place these files in a folder included in your system PATH.
           </p>
         </motion.div>
 

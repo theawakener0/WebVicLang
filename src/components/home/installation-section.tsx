@@ -56,7 +56,7 @@ export function InstallationSection() {
               <p><span className="text-green-400">➜</span> <span className="text-blue-400">~</span> victoria --version</p>
               <p className="text-zinc-500">Victoria version 0.1.0 (windows/amd64)</p>
               <p className="pt-2"><span className="text-green-400">➜</span> <span className="text-blue-400">~</span> vic install http_server</p>
-              <p className="text-zinc-500">Installing package 'http_server'...</p>
+              <p className="text-zinc-500">Installing package http_server...</p>
               <p className="text-zinc-500">✓ Package installed successfully.</p>
               <p className="pt-2"><span className="text-green-400">➜</span> <span className="text-blue-400">~</span> <span className="animate-pulse">_</span></p>
             </div>
